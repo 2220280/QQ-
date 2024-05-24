@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/setting-profile.css">
+    <title>setting-profile</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="profile-box">
+            
+            <!--編集画面へ遷移するアイコン-->
+            <img src="img/ei-menu.png" class="menu-icon">
+
+            <!--profile画面にもどる-->
+            <a href="profile.html"><img src="img/arrow_left_24.png" class="back-icon"></a>
+
+            <form action="" method="post">
+                
+                <!--ユーザーアイコン-->
+                <img src="img/yama.png" class="profile-pic">
+
+                <h3>#NAME#</h3>
+                <p>#ふりがな#</p>
+                
+                <div class="profile-bottom">
+                    
+                    <!--対応方法-->
+                    <label for="ple">▼対応方法▼</label>
+                    <input type="checkbox" id="ple" name="ple"/>
+                    
+                    <!--textareaの範囲を指定-->
+                    <div class="please-div">
+                        <textarea name="please" id="please" cols="50" rows="10"></textarea>
+                    </div><!--/.please-div-->
+
+                    <!--緊急連絡先-->
+                    <label for="etel">▼緊急連絡先▼</label>
+                    <input type="checkbox" id="etel" id="etel"/>
+                    
+                    <!--inputの範囲を指定-->
+                    <div class="ftel-div">
+                        <p>ハイフン無しで入力してください</p>                                    <!--※削除-->               <!--追加-->
+                        <input type="tel" name="ftel" placeholder="00000000000" >               <!--type="text" → type="tel" id削除 placeholder="00000000000"追加-->
+                    </div><!--/.ftel-div-->
+
+                </div><!--/.profile-bottom-->
+
+            </form>
+
+            <!--保存ボタン-->
+            <div class="button-div">
+                <input type="submit" class="button" name="button" title="保存" value="保存"></input>
+            </div><!--/.button-div-->
+
+        </div><!--/.profile-box-->
+    </div><!--/.container-->
+
+</body>
+</html>
