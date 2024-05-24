@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/readQR.css">
+    <title>QR読み込んで見える</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="emergency-box">
+
+            <!--お願い-->
+            <label for="please">▼お願い▼</label>
+            <!-- <input type="checkbox" id="please" id="please"/> 削除 -->
+            <!--テキスト表示-->
+            <div class="please-div">
+                <p>
+                    #しばらくすると落ち着きます。#
+                </p>
+            </div><!--/.please-div-->
+
+            <!--緊急連絡先-->
+            <label for="htel">▼緊急連絡先▼</label>
+            <!-- <input type="checkbox" id="htel" id="htel"/>     削除-->
+
+            <!--電話番号url-->
+            <div class="ftel-div">
+                <a href="tel:#ftel#">#ftel#</a>
+            </div><!--/.ftel-div-->
+
+            <div class="htel">
+                <a href="tel:#htel#">#htel#</a>         <!--追記-->
+            </div>
+
+            <!--119ボタン 追記-->
+            <div class="button-div">
+                <input type="submit" id="btn" name="button" value="119"></input>    
+              </div>
+            
+            <script>
+                function butotnClick(){
+                    alert('Click');
+                }
+                
+                let button = document.getElementById('btn');
+                button.addEventListener('click', butotnClick);
+            </script>
+            
+        </div><!--/.emergency-box-->
+    </div><!--/.container-->
+
+    <script src="js/readQR.js"></script>
+</body>
+</html>
