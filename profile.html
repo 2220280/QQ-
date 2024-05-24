@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+            <a href="setting-profile.html"><img src="img/qrcodemono_105895.png" class="QR-icon"></a>    <!--class="menu-icon" → class="QR-icon"-->
+            <a href="setting-profile.html"><img src="img/setting.png" class="setting-icon"></a>
+            <img src="img/yama.png" class="profile-pic">
+
+          <form action="" method="post">  
+                <h3>#NAME#</h3>
+                <p>#ふりがな#</p>
+                
+                <div class="profile-bottom">
+
+                    <!--対応方法-->
+                    <label for="please">▼対応方法▼</label>
+                    <input type="checkbox" name="please" id="please" class="switch"/>       <!--id="please id="please" → name="please" id="please"-->
+                    <!--隠したいコンテンツ-->
+                    <div class="content">
+                        <p>
+                            #しばらくすると落ち着きます。#
+                        </p>
+                    </div>
+
+                    <!--緊急連絡先-->
+                    <label for="ftel">▼緊急連絡先▼</label>
+                    <input type="checkbox" name="ftel" id="ftel" class="switch"/>       <!--id="ftel id="ftel" → name="ftel" id="ftel"-->
+                    <!--隠したいコンテンツ-->
+                    <div class="content">
+                        <p>#ftel#</p>       <!--<a href="tel:#ftel#</a> → <p>#ftel#</p>-->
+                    </div>
+                </div>
+
+                <!--QRコード読み取りロック-->
+                <div class="toggle_button">
+                    <input id="toggle" class="toggle_input" type='checkbox' />
+                    <label for="toggle" class="toggle_label">
+                </div>
+        </form>
+
+        </div><!--profile-bottom-->
+    </div><!--container-->
+
+</body>
+</html>
